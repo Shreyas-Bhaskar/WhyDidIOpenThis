@@ -1,0 +1,34 @@
+{
+    "manifest_version": 3,
+    "name": "Why did I open this?",
+    "version": "1.0",
+    "description": "Keep notes on why you opened your tabs to enhance productivity and organization.",
+    "permissions": [
+      "activeTab",
+      "storage",
+      "tabs"
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+      }
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content_scripts/content_script.js"]
+      }
+    ],
+    "icons": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  }
+  

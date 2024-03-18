@@ -30,19 +30,6 @@ To set up a development environment for the extension, you'll need:
 
 Refer to the `manifest.json` for an overview of the extension's structure and permissions.
 
-### Directory Structure
-
-A brief overview of the key directories and files:
-
-why-did-i-open-this/
-├── icons/
-├── popup/
-├── background/
-├── content_scripts/ (optional)
-├── manifest.json
-└── images/ (optional)
-
-
 
 ## Future Enhancements
 

@@ -1,48 +1,22 @@
 body, html {
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100%;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background-color: #f4f4f4;
-}
-
-.container {
-    width: 250px; /* Width similar to a post-it note */
-    height: 250px; /* Height similar to a post-it note */
-    padding: 15px;
-    margin: 10px auto;
-    background-color: #fcf0ad; /* Post-it note color */
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Space out textarea and list */
-    overflow: hidden; /* Keep everything contained */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
 }
 
 textarea#noteInput {
-    width: 100%; /* Fill width */
-    height: 40%; /* Allocate a portion of the height to the textarea */
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    background-color: #ffffff;
-    resize: none; /* Disable resizing to maintain the post-it note appearance */
-}
-
-ul#notesList {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    overflow-y: auto; /* Allow scrolling within the list */
-    height: 55%; /* Allocate the remaining height to the list */
-}
-
-ul#notesList li {
-    background-color: #fff8dc;
-    padding: 5px;
-    margin-bottom: 5px;
-    border-radius: 3px;
-    box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+    width: 300px; /* Square dimension */
+    height: 300px; /* Square dimension */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+    resize: none; /* Prevent resizing to maintain square shape */
+    overflow: auto; /* Allow scrolling inside textarea */
+    font-size: 16px; /* Adjust font size for better readability */
 }

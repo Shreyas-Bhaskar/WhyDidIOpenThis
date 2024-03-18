@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tab Notes</title>
-    <link rel="stylesheet" href="popup.css"> <!-- Make sure you create a corresponding CSS file -->
+    <title>Notes</title>
+    <link rel="stylesheet" href="popup.css">
 </head>
 <body>
-    <h3>Notes for this tab:</h3>
-    <textarea id="noteInput" placeholder="Add a new note..."></textarea>
-    <button id="saveNote">Save Note</button>
-    <div id="notesList"></div>
+    <div class="container">
+        <textarea id="noteInput" placeholder="Type your note here and press Enter to save..."></textarea>
+        <ul id="notesList"></ul>
+    </div>
     <script src="popup.js"></script>
 </body>
 </html>
